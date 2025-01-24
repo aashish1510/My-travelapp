@@ -1,6 +1,12 @@
 /* Name: Ashish Bhanvarbhai Yadav
 Student Number: 9004719  */
 
+/* General Reset to Prevent Overflow */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* body-styling */
 body {
@@ -9,21 +15,25 @@ body {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    overflow-x: hidden; 
+    max-width: 100%;
 }
 
+/* Image Styling */
 .main_image {
     width: 100%;
-    height: 600px;
+    max-height: 600px;
+    object-fit: cover; 
 }
 
 /* header-styling */
 .header {
     background: linear-gradient(to right, #ff6600, #ff3300);
-    /* Gradient background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 .header h1 {
@@ -39,6 +49,7 @@ nav {
     background: #333;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
 }
 
 nav a {
@@ -46,10 +57,11 @@ nav a {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    margin: 0 40px;
-    padding: 20px 25px;
+    margin: 0 20px;
+    padding: 15px 20px;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -63,18 +75,19 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 40px 20px;
-    margin: 42px;
-    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .text {
     font-size: 1rem;
+    padding: 20px;
 }
 
 .text h2 {
     font-size: 40px;
-    margin-top: -160px;
+    margin-top: 0;
 }
 
 .text p {
@@ -83,21 +96,24 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+/* Image Fix */
 .video img {
-    margin-top: -55px;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
+/* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 35px;
-    margin-left: 20px;
-    font-family: sans-serif;
-    font-size: 18px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* Card Styling */
 .cards {
     display: flex;
     border: 2px solid #9c6a00;
@@ -107,12 +123,14 @@ nav a:hover {
     border-radius: 5px;
     color: #2c2c2c;
     box-shadow: 0px 0px 7px #9c6a00;
+    max-width: 100%;
+    text-align: center;
 }
 
 .cards img {
-    width: 400px;
-    height: 400px;
-    padding: 0px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border: 2px solid #815300;
 }
 
@@ -125,20 +143,14 @@ nav a:hover {
 
 .cards h1 {
     font-size: 35px;
-    text-align: center;
-}
-
-.cards a {
-    text-decoration: none;
 }
 
 .cards .btn {
     text-align: center;
     padding: 15px;
-    border-radius: 1px;
     font-weight: bold;
     font-size: 17px;
-    width: 120px;
+    width: 100%;
     background-color: #9c6a00;
     color: white;
     border: none;
@@ -149,59 +161,6 @@ nav a:hover {
     background-color: #815300;
 }
 
-/* Tour Card Styles */
-.tour-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 320px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-/* Tour Info */
-.tour-info {
-    padding: 20px;
-    text-align: left;
-}
-
-.tour-info .duration {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 5px;
-}
-
-.tour-info h2 {
-    font-size: 22px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.tour-info .location {
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 15px;
-}
-
-/* Tour Features */
-.tour-features {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.tour-features span {
-    font-size: 16px;
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.tour-features i {
-    margin-right: 5px;
-    color: #ff9f43;
-}
-
 /* Footer */
 .footer-container {
     background-color: #888;
@@ -209,8 +168,9 @@ nav a:hover {
     padding: 30px 0;
     margin-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .footer-container h3 {
@@ -218,7 +178,7 @@ nav a:hover {
 }
 
 .footer-links {
-    margin-left: 300px;
+    margin: 0 20px;
 }
 
 .footer-links ul {
@@ -232,7 +192,7 @@ nav a:hover {
 }
 
 .footer-social {
-    margin-right: 300px;
+    margin: 0 20px;
 }
 
 .footer-social a {
@@ -247,3 +207,5 @@ nav a:hover {
     background: #111;
     color: #bbb;
 }
+
+
