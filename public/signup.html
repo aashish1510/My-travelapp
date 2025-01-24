@@ -1,0 +1,73 @@
+<!-- Name: Ashish Bhanvarbhai Yadav
+    Student Number: 9004719 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Signup Page -->
+    <title>Signup Page</title>
+
+    <!-- Linking external CSS file for page styling -->
+    <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Importing external JavaScript file to handle signup functionality -->
+    <script type="module" src="./signup.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Signup form box containing heading, form fields, and links -->
+        <div class="signup-box">
+            <h1>Create An Account</h1>
+
+            <!-- Link to redirect users who already have an account -->
+            <p>Already have an account? <a href="./login.html">Log In</a></p>
+
+            <!-- Signup form to collect user details -->
+            <form class="signupForm">
+
+                <!-- Input field for First Name -->
+                <div class="input-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter your first name" required />
+                </div>
+
+                <!-- Input field for Last Name -->
+                <div class="input-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter your last name" required />
+                </div>
+
+                <!-- Input field for Phone Number -->
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required />
+                </div>
+
+                <!-- Input field for Email Address -->
+                <div class="input-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Input field for Password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a strong password" required />
+                </div>
+
+                <!-- Submit button to create an account -->
+                <div class="input-group">
+                    <input type="submit" id="submit" value="Create an Account" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

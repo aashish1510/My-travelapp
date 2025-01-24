@@ -1,0 +1,69 @@
+<!-- Name: Ashish Bhanvarbhai Yadav
+    Student Number: 9004719 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Admin Page -->
+    <title>Admin Page</title>
+
+    <!-- Linking external JavaScript file for handling admin functionalities -->
+    <script type="module" src="./adminonly.js" defer></script>
+
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="./adminonly.css">
+</head>
+
+<body>
+    <!-- Header section containing the title of the travel booking website -->
+    <header>
+        <h1>Alibaba Travel Destination</h1>
+    </header>
+
+    <!-- Navigation bar for admin to navigate through different pages -->
+    <nav>
+        <div>
+            <a href="./adminonly.html">Home</a> <!-- Link to Home Page -->
+            <a href="./booknow.html">Create Booking</a> <!-- Link to Booking Form Page -->
+            <a href="./login.html">LogOut</a> <!-- Link to Logout Page -->
+        </div>
+    </nav>
+
+    <!-- Main section to display booking records in a table format -->
+    <main>
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <!-- Display user's name, email, contact etc in table format after user booked successfully -->
+                        <th>Sno</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Destinations</th>
+                        <th>Travel-Date</th>
+                        <th>No. of Travelers</th>
+                        <th>Special Request</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                    <!-- Booking data will be dynamically inserted here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer section containing copyright information -->
+    <footer>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alibaba Travel Created By Ashish Yadav (9004719). All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!-- Name: Ashish Bhanvarbhai Yadav
+    Student Number: 9004719 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Travel Booking Form page -->
+    <title>Travel Booking Form</title>
+
+    <!-- Linking external CSS file for page styling -->
+    <link rel="stylesheet" href="./bookingnow.css">
+
+    <!-- Importing external JavaScript file to handle form submission logic -->
+    <script type="module" src="./booking.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section containing the title of the travel booking website -->
+    <header>
+        <div class="header">
+            <h1>Alibaba Travel Destination</h1>
+        </div>
+    </header>
+
+    <!-- Navigation bar for users to navigate through different pages -->
+    <nav>
+        <div>
+            <a href="./booking.html">Home</a> <!-- Link to Home Page -->
+            <a href="./booknow.html">Book Now</a> <!-- Link to Booking Form Page -->
+            <a href="./contact.html">Contact</a> <!-- Link to Contact Page -->
+            <a href="./login.html">LogOut</a> <!-- Link to Logout Page -->
+        </div>
+    </nav>
+
+    <!-- Main heading for the booking form -->
+    <h2>Travel Booking Form</h2>
+    <!-- Booking Form for users to fill in travel details -->
+    <form class="bookingForm">
+        <!-- Input field for Full Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Input field for Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email (e.g. example@domain.com)" required>
+        <br><br>
+
+        <!-- Input field for Contact Number -->
+        <label for="phone">Contact:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required>
+        <br><br>
+
+        <!-- Checkboxes for selecting multiple travel destinations -->
+        <label for="destination">Destinations:</label>
+        <div id="destination-options">
+            <div class="checkbox-container">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="singapore" value="Singapore" name="destination">
+                    <label for="singapore">Singapore</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="thailand" value="Thailand" name="destination">
+                    <label for="thailand">Thailand</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="china" value="China" name="destination">
+                    <label for="china">China</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="bali" value="Bali" name="destination">
+                    <label for="bali">Bali</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="australia" value="Australia" name="destination">
+                    <label for="australia">Australia</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="japan" value="Japan" name="destination">
+                    <label for="japan">Japan</label>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Input field for Travel Date -->
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+        <!-- Input field for Number of Travelers -->
+        <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" min="1" placeholder="Enter number of travelers" required>
+        <br><br>
+
+        <!-- Textarea for any special requests -->
+        <label for="message">Special Requests (Optional):</label>
+        <textarea id="message" name="message" placeholder="Any special requests..."></textarea>
+        <br><br>
+
+        <!-- Submit button to submit the booking form -->
+        <input type="submit" id="submit" value="Book Now">
+    </form>
+
+    <!-- Footer section containing copyright information -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li><br>
+                    <li><a href="#">Terms of Service</a></li><br>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alibaba Travel Created By Ashish Yadav (9004719). All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

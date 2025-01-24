@@ -1,0 +1,249 @@
+/* Name: Ashish Bhanvarbhai Yadav
+Student Number: 9004719  */
+
+
+/* body-styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.main_image {
+    width: 100%;
+    height: 600px;
+}
+
+/* header-styling */
+.header {
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    /* Gradient background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 40px;
+    padding: 20px 25px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #ff6600;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+}
+
+/* mainpage-styling */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 42px;
+    align-items: center;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.text h2 {
+    font-size: 40px;
+    margin-top: -160px;
+}
+
+.text p {
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 15px;
+}
+
+.video img {
+    margin-top: -55px;
+    width: 600px;
+    height: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    border: 2px solid #9c6a00;
+    background-color: #fffaf3;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    color: #2c2c2c;
+    box-shadow: 0px 0px 7px #9c6a00;
+}
+
+.cards img {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    border: 2px solid #815300;
+}
+
+.cards li {
+    font-family: cursive;
+    padding: 2px;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+.cards h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+.cards .btn {
+    text-align: center;
+    padding: 15px;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
+    background-color: #9c6a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cards .btn:hover {
+    background-color: #815300;
+}
+
+/* Tour Card Styles */
+.tour-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Tour Info */
+.tour-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.tour-info .duration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.tour-info h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.tour-info .location {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Tour Features */
+.tour-features {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tour-features span {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.tour-features i {
+    margin-right: 5px;
+    color: #ff9f43;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #888;
+    color: black;
+    padding: 30px 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-left: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social {
+    margin-right: 300px;
+}
+
+.footer-social a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    color: #bbb;
+}

@@ -1,0 +1,56 @@
+<!-- Name: Ashish Bhanvarbhai Yadav
+    Student Number: 9004719 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Admin Login Page -->
+    <title>Admin Login Page</title>
+
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Importing JavaScript file for admin login functionality -->
+    <script type="module" src="./adminlogin.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Admin login form box with a title -->
+        <div class="admin-login-box">
+            <h1>Admin Login</h1>
+
+            <!-- Admin login form -->
+            <form class="adminLoginForm">
+
+                <!-- Input field for admin email -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Input field for admin password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required />
+                </div>
+
+                <!-- Submit button for login -->
+                <div class="input-group">
+                    <input type="submit" id="submit" value="Login" />
+                </div>
+
+            </form>
+
+            <!-- Link to redirect users to the user login page -->
+            <a href="./login.html">User Log In</a></br></br>
+        </div>
+    </div>
+
+</body>
+
+</html>

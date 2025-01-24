@@ -1,0 +1,61 @@
+<!-- Name: Ashish Bhanvarbhai Yadav
+    Student Number: 9004719 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Login Page -->
+    <title>Login Page</title>
+
+    <!-- Linking external CSS file for page styling -->
+    <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Importing external JavaScript file to handle login functionality -->
+    <script type="module" src="./login.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Login form box containing input fields and login options -->
+        <div class="login-box">
+            <h1>Login</h1>
+
+            <!-- User login form -->
+            <form class="loginForm">
+
+                <!-- Input field for email -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Input field for password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required />
+                </div>
+
+                <!-- Submit button for login successfully-->
+                <div class="input-group">
+                    <input type="submit" id="submit" value="Login" />
+                </div>
+            </form>
+
+            <!-- Link group for user navigation -->
+            <div class="link-group">
+                <!-- Link to redirect to sign-up page -->
+                <a href="./signup.html">Create a new account</a></br></br>
+
+                <!-- Link to redirect to the admin login page -->
+                <a href="./adminlogin.html">Go to admin login page</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
