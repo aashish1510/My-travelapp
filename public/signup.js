@@ -90,7 +90,7 @@ submit.addEventListener("click", function(event) {
         .then((userCredential) => {
             // Successful account creation
             alert("Account created successfully!");
-            window.location.replace("public/login.html"); // Redirect user to the login page
+            window.location.replace("./public/login.html"); // Redirect user to the login page
         })
         .catch((error) => {
             // Handle errors from Firebase signup
