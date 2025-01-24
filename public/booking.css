@@ -133,7 +133,7 @@ nav a:hover {
 .cards img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border: 2px solid #815300;
 }
 
